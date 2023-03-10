@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 68.5%;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.result{
+    margin: auto;
+    padding: 3rem 1rem;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.result h6{
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 90%);
+}
+
+.result-num{
+    background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 10rem;
+    height: 10rem;
+    gap: 0.5rem;
+}
+
+.result-num p{
+    font-size: 5.2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.result-num span{
+    color: hsl(0, 0%, 90%);
+    font-weight: 300;
+}
+
+.great{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.great-text{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.great-info{
+    color: hsl(0, 0%, 90%);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*********************************/
+/*** SUMMARY SECTION**************/
+/*********************************/
+.summary{
+    padding: 2rem;
+}
+.summary h3{
+    color:  hsl(234, 85%, 45%);
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.summary-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.summary-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.summary-box p{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.summary-box p span{
+    color: hsl(224, 30%, 27%);
+    font-size: 600;
+}
+
+.reaction{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reaction span{
+    font-size: 1.3rem;
+}
+
+.reaction-box{
+    background-color: hsla(0, 100%, 67%,10%);
+}
+
+.memory-box{
+    background-color: hsla(39, 100%, 56%,10%);
+}
+
+.verbal-box{
+    background-color: hsla(166, 100%, 37%,10%);
+}
+
+.visual-box{
+    background-color: hsla(234, 85%, 45%,10%);
+}
+
+.reaction-box .reaction span{
+    color: hsla(0, 100%, 67%);
+}
+
+.memory-box .reaction span{
+    color: hsla(39, 100%, 56%);
+}
+
+.verbal-box .reaction span{
+    color: hsla(166, 100%, 37%);
+}
+
+.virtual-box .reaction span{
+    color: hsla(234, 85%, 45%);
+}
+
+.summary-link{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    background-color: hsl(224, 30%, 27%);
+    padding: 1.3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.summary-link:hover{
+    background-color: hsl(234, 85%, 45%);
+}
+
+@media(max-width: 320px){
+    .result{
+        max-width: 30rem;
+    }
+}
+
+@media(min-width: 500px){
+    .result{
+        max-width: 35rem;
+    }
+
+    .summary{
+        max-width: 35rem;
+        margin: auto;
+        background-color: #fff;
+        box-shadow: 0px 30px 60px rgba(0,0,0,0.2);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+@media(min-width: 750px){
+    .result{
+        margin-top: 2rem;
+        border-radius: 30px;
+    }
+}
+
+@media(min-width: 900px){
+    html{
+        font-size: 72%;
+    }
+
+    .container{
+        max-width: 70rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 6rem;
+    }
+
+    .result{
+        flex-basis: 60%;
+        width: 32rem;
+        height: 420px;
+        transform: translateX(20px);
+    }
+
+    .summary{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        margin-top: 2rem;
+        border-radius: 30px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 30rem;
+        height: 36rem;
+        flex-basis: 60%;
+    }
+
+    .summary-boxes{
+        padding-left: 1.5rem;
+    }
+}
+/*### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+ 
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+
+### Notes
+*/
